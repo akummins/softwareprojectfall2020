@@ -5,10 +5,10 @@ headers = {'content-type': 'application/json',
 	   'X-JokesOne-Api-Secret': format(api_token)}
 
 response = requests.get(url, headers=headers)
-#print(response)
-#print(response.text)
-jokes=response.json()['contents']['jokes'][0]
-print(jokes)
+# print(response)
+# print(response.text)
+# jokes=response.json()['contents']['jokes'][0]['joke']['text']
+# print(jokes)
 
 sadthings = ['Snuggle up. Climbing under a soft blanket for a few minutes might make us more relaxed and flexible. Researchers found there’s something about contact with soft things that just makes us feel better.',
 'See what day it is at https://nationaldaycalendar.com/what-is-national-today/', 'Meditate. Meditation is a quick, effective way to chill out and improve our outlook, and it might even make us smarter. Just a few minutes of sitting quietly, focusing on the breath, and maybe chanting a few Oms (silently or out loud) can snap us out of a funk',
@@ -16,9 +16,7 @@ sadthings = ['Snuggle up. Climbing under a soft blanket for a few minutes might 
 'Achieve a goal. Even small successes can have big mood payoffs. Toss a crumpled ball of paper into the trash can Michael Jordan style, win a game of Solitaire, pick up a pencil off the floor using only your toes—in moments you’ll be basking in the glory of accomplishment.','Laugh. Laughter can cheer us up and decrease anxiety—and the best news is it doesn’t have to be “genuine” to have a positive effect. So even when it seems like there’s absolutely nothing funny in all of this world, busting out a big guffaw might just change your mind. Need help getting started? Check out the latest viral youtube videos, the Greatist tumblr, or anything said by Zack Galifianakis.'
 ]
 
-happythings = [
-
-]
+# happythings = [f'Here/s a Joke! {jokes}']
 
 excitedthings = ['Try a new restaurant, with a fun spin! You know that list you’ve been making of restaurants you’ve been dying to check out but haven’t had time to actually go to? Now’s the time to get it out and make a rez. Just because some kids can be picky doesn’t mean you can’t try to excite them with something new and original.', 'Go lumberjack for the evening. The thought of taking a youngster to throw axes may be scary, but in a supervised environment, it’s the best, most exhilarating activity out there. Plus, at some places, anyone 11 and older can participate!',
 'Go to an outdoor group fitness class. Combining the pleasure of being outdoors with learning and great exercise. What could be better? Not a whole lot. You would be surprised by the amount of outdoor yoga, dance and cardio classes that allow people of all ages to participate', 
