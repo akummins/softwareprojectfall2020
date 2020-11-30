@@ -12,17 +12,13 @@ def mood(entry):
     neutral = score['neu']
     positive = score['pos']
     if .2 >= negative >= 0 and  .5 >= neutral >= 0 and positive >= .75:
-        rec = random.choice(excitedthings)
-        return "excited." f'We reccomend to: {rec}'
+        return excitedthings
     elif .2 >= negative >= 0 and  .5 >= neutral >= 0 and positive >= .5:
-        rec = random.choice(happythings)
-        return "happy." #f'{rec}'
+        return happythings
     elif negative >= .75 and  .5 >= neutral >= 0 and positive <= .2:
-        rec = random.choice(depressedthings)
-        return "depressed." f'We reccomend to: {rec}'
+        return depressedthings
     elif negative >= .5 and  .5 >= neutral >= 0 and positive <= .2:
-        rec = random.choice(sadthings)
-        return "sad." f'We reccomend to: {rec}'
+        return sadthings
     else:
         return "We don't know what to tell you, bro. Your emotions are too much for us, but we hope your day is better tomorrow."
 
