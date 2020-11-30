@@ -7,6 +7,7 @@ nltk.download('vader_lexicon')
 
 
 def mood(entry):
+    """Uses Sentiment Analysis to score based on a users inputted journal entry and returns a fact/thing to do/mood booster based on mood"""
     score = SentimentIntensityAnalyzer().polarity_scores(entry)
     negative = score['neg']
     neutral = score['neu']
