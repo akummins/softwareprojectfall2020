@@ -25,6 +25,6 @@ The APIs used in this project are:
 1. [Cat Fact](https://alexwohlbruck.github.io/cat-facts/docs/)
 
 ## Running the App
-Once the necesary packages are installed, the app can be run as normal in command line. To run the app, clone our repository to your computer, and open it in command line, and run `flask run`. A message should pop up stating that the app is running at an address locally on your device. 
+Once the necessary packages are installed, the app can be run as normal in the command line. To run the app, clone our repository to your computer, and open it in the command line, and run `flask run`. A message should appear stating that the app is running at an address locally on your device. 
 
 __Created by Allyson Kummins and Blake Samper (2020)__
