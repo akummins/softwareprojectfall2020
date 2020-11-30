@@ -28,3 +28,4 @@ The APIs used in this project are:
 Once the necessary packages are installed, the app can be run as normal in the command line. To run the app, clone our repository to your computer, and open it in the command line, and run `flask run`. A message should appear stating that the app is running at an address locally on your device. 
 
 __Created by Allyson Kummins and Blake Samper (2020)__
+[Full Project Wiki Here](https://github.com/akummins/softwareprojectfall2020/wiki)
