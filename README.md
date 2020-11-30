@@ -3,9 +3,8 @@ The Python Mood Ring is an app that gives users suggestions to boost their mood 
 
 Potential suggestions include cat facts, taco recipes, jokes, and dog photos. 
 
-
 ## Required Packages
-Below are 3 required packages that are not part of the standard Python Library. Run the following lines of code in the console/command line to install the libraries before running our code. Once these are installed, the app can be run as normal using `flask run` in command line. 
+Below are 3 required packages that are not part of the standard Python Library. Run the following lines of code in the console/command line to install the libraries before running our code. 
 1. flask:
    ```bash 
    python -m pip install flask 
@@ -25,6 +24,7 @@ The APIs used in this project are:
 1. [Taco Randomizer](https://github.com/evz/tacofancy-api)
 1. [Cat Fact](https://alexwohlbruck.github.io/cat-facts/docs/)
 
-
+## Running the App
+Once the necesary packages are installed, the app can be run as normal in command line. To run the app, clone our repository to your computer, and open it in command line, and run `flask run`. A message should pop up stating that the app is running at an address locally on your device. 
 
 __Created by Allyson Kummins and Blake Samper (2020)__
