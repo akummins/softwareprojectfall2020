@@ -11,16 +11,18 @@ sadthings= f'Looks like you are sad. Check out this picture of a dog to cheer yo
 
 
 # HAPPY
-jokeurl = "https://dad-jokes.p.rapidapi.com/random/joke"
-headers = {
-    'x-rapidapi-host': "dad-jokes.p.rapidapi.com",
-    'x-rapidapi-key': "1e4059ac59mshbe991e87567eb1ap10e64cjsn039a54f256d6"
-    }
-jokeresponse = requests.request("GET", jokeurl, headers=headers)
-jokesetup=jokeresponse.json()['body'][0]['setup']
-jokepunchline=jokeresponse.json()['body'][0]['punchline']
-happythings = f'Looks like you are happy! Here is a Joke! {jokesetup}  {jokepunchline}'
-
+try:
+    jokeurl = "https://dad-jokes.p.rapidapi.com/random/joke"
+    headers = {
+        'x-rapidapi-host': "dad-jokes.p.rapidapi.com",
+        'x-rapidapi-key': "1e4059ac59mshbe991e87567eb1ap10e64cjsn039a54f256d6"
+        }
+    jokeresponse = requests.request("GET", jokeurl, headers=headers)
+    jokesetup=jokeresponse.json()['body'][0]['setup']
+    jokepunchline=jokeresponse.json()['body'][0]['punchline']
+    happythings = f'Looks like you are happy! Here is a Joke! {jokesetup}  {jokepunchline}'
+except:
+    print("We've reached the limit for calls to the Jokes API today. Try again tomorrow.")
 
 # EXCITED
 tacourl='http://taco-randomizer.herokuapp.com/random/?full-taco=true'
