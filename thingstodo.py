@@ -1,7 +1,6 @@
 
 # import pprint
 import requests
-import webbrowser
 
 # SAD 
 """Pulls from an API of dog images to generate a random link every time"""
