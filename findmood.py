@@ -12,16 +12,16 @@ def mood(entry):
     negative = score['neg']
     neutral = score['neu']
     positive = score['pos']
-    if positive >= .75:
+    if positive >= .6:
         return excitedthings
-    elif positive >= .5:
+    elif positive >= .4:
         return happythings
-    elif negative >= .75:
+    elif negative >= .6:
         return depressedthings
-    elif negative >= .5:
+    elif negative >= .4:
         return sadthings
     else:
-        return "We don't know what to tell you, bro. Your emotions are too much for us, but we hope your day is better tomorrow."
+        return "We can't quite determine what your mood is. Either you aren't feeling much of anything or you need to try again and describe your emotions a bit more."
 
 
 
