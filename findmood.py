@@ -14,7 +14,7 @@ def mood(entry):
     positive = score['pos']
     if positive >= .6:
         return excitedthings
-    elif positive >= .4:
+    elif positive >= .5:
         return happythings
     elif negative >= .6:
         return depressedthings
