@@ -1,5 +1,5 @@
 # Python Mood Ring
-The Python Mood Ring is an app that gives users suggestions to boost their mood based on their own journal entries. 
+The Python Mood Ring is an app that gives users suggestions to boost their mood based on their own journal entries. [View the App here](https://python-mood-ring.herokuapp.com/)
 
 Potential suggestions include cat facts, taco recipes, jokes, and dog photos. 
 
